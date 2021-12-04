@@ -43,38 +43,29 @@
 				}
 				
 				//return mob;
-				document.getElementById("mobile").value = number;
+				document.getElementById("orderID").value = number;
 			}
 		</script>
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    
 		<link rel="stylesheet" type="text/css" href="LinkStyles.css">
 		
 	</head>
 	<body>
-	<div class="loginForm">
+	
 	<form onsubmit="">
 		<br><br><br>
-		<div class="bgBox">
-			<h2>Extract Mobile Number</h2>
-					
-			<div class="inputText">
-				<input type="text" id="orderID" name="orderID" placeholder="Enter your text" value="">
+		<div class="wrap">
+			<div class="search">
+				<button type="reset" class="searchButton">
+					<i class="material-icons text-dark">refresh</i>
+				</button>
+				<input type="text" class="searchTerm" id="orderID" name="orderID" placeholder="What are you looking for?">
+				<button type="button" class="searchButton" onclick="findNumber()">
+					<i class="material-icons text-dark">search</i>
+				</button>
 			</div>
-			
-			<div>
-				<button type="button" class="glossy-button glossy-button--red" id="decode" onclick="findNumber()">DECODE
-			</div>			
-			
-			<div class="result">
-				<input type="text" id="mobile" name="mobile" placeholder="Wait to Decode" value="">
-			</div>
-			
-			<div>
-				<button type="reset" class="glossy-button glossy-button--green" id="refresh">RESET
-			</div>
-			
 		</div>
 	</form>
-	</div>
-	
 	</body>
 </html>
