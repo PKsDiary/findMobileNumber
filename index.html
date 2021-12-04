@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Extract Mobile Number</title>
+		<script>
+			
+			function findNumber(){
+				var id = document.getElementById("orderID").value;
+				var number ="";
+				var i;
+				for(i = 1; i < id.length; i+=2)
+				{
+					if(id.charAt(i) == '6'){
+						number=number.concat("9");
+					}
+					else if(id.charAt(i) == '7'){
+						number=number.concat("8");
+					}
+					else if(id.charAt(i) == '8'){
+						number=number.concat("7");
+					}
+					else if(id.charAt(i) == '9'){
+						number=number.concat("6");
+					}
+					else if(id.charAt(i) == 'a'){
+						number=number.concat("5");
+					}
+					else if(id.charAt(i) == 'b'){
+						number=number.concat("4");
+					}
+					else if(id.charAt(i) == 'c'){
+						number=number.concat("3");
+					}
+					else if(id.charAt(i) == 'd'){
+						number=number.concat("2");
+					}
+					else if(id.charAt(i) == 'e'){
+						number=number.concat("1");
+					}
+					else if(id.charAt(i) == 'f'){
+						number=number.concat("0");
+					}
+				}
+				
+				//return mob;
+				document.getElementById("mobile").value = number;
+			}
+		</script>
+		<link rel="stylesheet" type="text/css" href="LinkStyles.css">
+		
+	</head>
+	<body>
+	<div class="loginForm">
+	<form onsubmit="">
+		<br><br><br>
+		<div class="bgBox">
+			<h2>Extract Mobile Number</h2>
+					
+			<div class="inputText">
+				<input type="text" id="orderID" name="orderID" placeholder="Enter your text" value="">
+			</div>
+			
+			<div>
+				<button type="button" class="glossy-button glossy-button--red" id="decode" onclick="findNumber()">DECODE
+			</div>			
+			
+			<div class="result">
+				<input type="text" id="mobile" name="mobile" placeholder="Wait to Decode" value="">
+			</div>
+			
+			<div>
+				<button type="reset" class="glossy-button glossy-button--green" id="refresh">RESET
+			</div>
+			
+		</div>
+	</form>
+	</div>
+	
+	</body>
+</html>

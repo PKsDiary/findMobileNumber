@@ -1,0 +1,169 @@
+html {
+	height: 100%;
+}
+body{
+	background-image: url("loginBG.jpg");
+		
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+}
+h2{
+    color: #006666;
+    text-align: center;
+    font-family: verdana;
+}
+label{
+	font-weight: bold;
+}
+#find{
+	font-weight: bold;
+}
+.loginForm{
+	padding-right: 50px;
+}
+.bgBox {
+    background-color: #f9f9f9;
+    padding: 50px;
+    border-radius: 5px;
+    border: 2px solid #dedede;
+    max-width: 430px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+	float: right;
+}
+.bgBox h2 { 
+    margin-top: 0;
+    font-size: 23px;
+    color: #484848;
+    text-align: center;
+    margin-bottom: 41px;
+    font-weight: bold;
+}
+
+.bgBox input{
+    border-radius: 3px;
+    padding-top: 1px;
+    transition: none;
+    -webkit-transition: none;
+    height: 47px;
+    padding: 0 15px;
+    box-shadow: none;
+    font-size: 15px;
+    line-height: 16px;
+    border: 1px solid #dedede;
+    font-weight: normal;
+    color: #484848;
+    width: 100%;
+    outline: none;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.bgBox input[type="checkbox"]{
+    height: 20px;
+	width: 20px;
+	align: center;
+}
+//Important
+.button{
+    padding: 6px 0;
+    height: 50px;
+	margin-bottom: 18px;
+    text-align:center;
+}
+
+
+.bgBox .inputText {
+    padding: 6px 0;
+    margin-bottom: 8px;
+    overflow: auto;
+}
+.bgBox .result {
+    padding-top: 25px;
+    margin-bottom: 8px;
+    overflow: auto;
+}
+.bgBox .inputRow .viewPassword {
+	padding-left: 20px;
+	
+}
+#showPassword{
+	text-align: center;
+}
+
+.bgBox .inputRow .decode {
+    color: #fff;
+    background: #5795d2;
+    border-color: #5795d2;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.bgBox .inputRow .decode:hover {
+    background: #3c78b3;
+}
+
+.glossy-button {
+  display: inline-block;
+  position: relative;
+  background-color: #AAA;
+  background-image: linear-gradient( /* chrome */
+    hsla(0, 0%, 100%, 0.6), hsla(0, 0%, 100%, 0) 50%,
+    hsla(0, 0%, 0%, 0.3) 50%, hsla(0, 0%, 100%, 0.2)
+  );
+  font-size: 22px;
+  font-family: sans-serif;
+  font-weight: bold;
+  color: white;
+  padding: 20px 40px;
+  text-shadow:
+    0 0 15px hsla(0, 0%, 100%, 1), /* bloom */
+    0 2px 4px hsla(0, 0%, 0%, 0.7); /* drop shadow */
+  border: none;
+  border-radius: 50px;
+  margin: 10px 55px;
+  width: 220px;
+  box-shadow:
+    inset 0 -5px 20px hsla(0, 0%, 0%, 0.4), /* top light */
+    inset 0 5px 20px hsla(0, 0%, 100%, 0.4), /* bottom shadow */
+    /* multiple light sources yall */
+    -8px 8px 5px hsla(0, 0%, 0%, 0.15), /* drop shadow 1 */
+    5px 18px 10px hsla(0, 0%, 0%, 0.2); /* drop shadow 2 */
+  cursor: pointer;
+  transition: transform 0.1s, box-shadow 0.1s;
+  overflow: auto;
+}
+
+/* highlight */
+.glossy-button:before {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 20px;
+  right: 20px;
+  top: 5px;
+  height: 30px;
+  border-radius: 15px;
+  background: linear-gradient(
+    hsla(0, 0%, 100%, 0.8), hsla(0, 0%, 100%, 0) );
+}
+
+.glossy-button--blue { background-color: #19F; }
+.glossy-button--gold { background-color: #EA0; }
+.glossy-button--green { background-color: #6C6; }
+.glossy-button--red { background-color: #E21; }
+
+.glossy-button:hover {
+  transform: scale(1.05);
+  box-shadow:
+    inset 0 -5px 20px hsla(0, 0%, 0%, 0.4), /* top light */
+    inset 0 5px 20px hsla(0, 0%, 100%, 0.4), /* bottom shadow */
+    /* multiple light sources yall */
+    -12px 12px 5px hsla(0, 0%, 0%, 0.15), /* drop shadow 1 */
+    10px 25px 10px hsla(0, 0%, 0%, 0.2); /* drop shadow 2 */
+}
